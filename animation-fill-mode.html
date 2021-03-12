@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css tutorial</title>
+	<style type="text/css">
+		div{
+			width: 150px;
+			height: 150px;
+			background:red;
+			position: relative;
+			margin-left: 20px;
+			animation-name: mymove;
+			animation-duration: 7s;
+			animation-delay: 2s;
+			animation-fill-mode:both;/*none,forwards,backwards*/
+			animation-play-state: running;/*paused;*/
+		}
+		div:hover{
+			animation-play-state: paused;
+		}
+		@keyframes mymove{
+			from{top: 0px;background-color: yellow;}
+			to{top: 300px;background-color: blue;}
+		}
+	</style>
+</head>
+<body>
+	<div>LERAN PROGRAMMING</div>
+
+</body>
+</html>
